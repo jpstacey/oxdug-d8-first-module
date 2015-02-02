@@ -5,3 +5,11 @@ oxdug.my_page:
     _title: 'Hello, OxDUG!'
   requirements:
     _permission: 'access content'
+
+oxdug.my_form:
+  path: '/myform'
+  defaults:
+    _form: '\Drupal\oxdug\Form\OxdugForm'
+    _title: 'OxDUG form'
+  requirements:
+    _permission: 'administer site configuration'
