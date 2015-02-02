@@ -1,0 +1,10 @@
+name: 'OxDUG demo'
+description: 'Demonstration D8 module for OxDUG'
+
+# Now both of these are required.
+type: module
+core: 8.x
+
+# Optional dependency declaration.
+dependencies:
+  - node
