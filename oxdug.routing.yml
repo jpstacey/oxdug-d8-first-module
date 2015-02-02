@@ -1,0 +1,7 @@
+oxdug.my_page:
+  path: '/mypage'
+  defaults:
+    _controller: '\Drupal\oxdug\Controller\OxdugController::myPage'
+    _title: 'Hello, OxDUG!'
+  requirements:
+    _permission: 'access content'
