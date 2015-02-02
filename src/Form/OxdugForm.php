@@ -28,6 +28,20 @@ class OxdugForm extends FormBase {
     $form['message'] = array(
       '#markup' => $this->t('Welcome to the super secret OxDUG form.'),
     );
+
+    $form['who_are_you'] = array(
+      '#type' => 'textfield',
+      '#title' => $this->t('Tell us who you are!'),
+      '#required' => TRUE,
+    );
+
+    $form['actions']['#type'] = 'actions';
+    $form['actions']['submit'] = array(
+      '#type' => 'submit',
+      '#value' => $this->t('Save'),
+      '#button_type' => 'primary',
+    );
+
     return $form;
   }
 
